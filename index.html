@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колеса фортуны - MLBB</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="mlbb-theme.mp3" type="audio/mpeg">
+        Ваш браузер не поддерживает аудио элемент.
+    </audio>
+    <div class="background"></div>
+    <div class="container">
+        <h1>Выбери лайн</h1>
+        <div class="button-container">
+            <button class="main-button" onclick="changeWheel('https://spinthewheel.app/isNQ7QocRo')">Все герои</button>
+        </div>
+        <div class="button-container secondary">
+            <button onclick="changeWheel('https://spinthewheel.app/mlweaTbpdR')">Роум</button>
+            <button onclick="changeWheel('https://spinthewheel.app/hNDBfSFWCp')">Линия опыта</button>
+            <button onclick="changeWheel('https://spinthewheel.app/k3mA0LXsWu')">Лес</button>
+            <button onclick="changeWheel('https://spinthewheel.app/R74xeEEJjX')">Средняя линия</button>
+            <button onclick="changeWheel('https://spinthewheel.app/zooHFiw6Bd')">Линия золота</button>
+        </div>
+        <iframe id="wheelFrame" src="https://spinthewheel.app/xDdN9VxaSS"></iframe>
+        <div class="footer">Lockyng</div>
+    </div>
+    <script>
+        function changeWheel(url) {
+            document.getElementById('wheelFrame').src = url;
+        }
+    </script>
+</body>
+</html>
